@@ -5,16 +5,28 @@ int[] myTestArray;
 
 }
 
-public int binarySearch(int searchingFor){
+public int binarySearch(int[] list, int searchingFor){
+
 int lowEnd, highEnd, middle;
 
 // initializing my search variables.
 lowEnd = 0;
-highEnd = myTestArray.length() - 1;
+highEnd = list.length() - 1;
 // At this point I could just divide highEnd by 2, 
 // but I want to remember that the search might be looking in the larger half and not always the smaller half.
 middle = (highEnd - lowEnd)/2
 
-// Here is where I will need my for loop.
-
+// Here is where I will need my for loop.... For loop might not be the best, since we don't really know when it will be finished.
+// We could still use a for and break when we find what we are looking for, but it seems better to use a while loop instead.
+while(middle >= 0){
+  if(middle > searchingFor){
+  
+  }
+  else if(middle < searchingFor){
+  
+  }
+  else{
+  
+  }
+ }
 }
