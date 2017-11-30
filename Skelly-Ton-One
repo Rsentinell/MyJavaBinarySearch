@@ -1,0 +1,20 @@
+public static void main(String[]args){
+int[] myTestArray;
+
+// I will need to initialize and populate my array before i can use the method.
+
+}
+
+public int binarySearch(int searchingFor){
+int lowEnd, highEnd, middle;
+
+// initializing my search variables.
+lowEnd = 0;
+highEnd = myTestArray.length() - 1;
+// At this point I could just divide highEnd by 2, 
+// but I want to remember that the search might be looking in the larger half and not always the smaller half.
+middle = (highEnd - lowEnd)/2
+
+
+
+}
