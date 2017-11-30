@@ -15,6 +15,6 @@ highEnd = myTestArray.length() - 1;
 // but I want to remember that the search might be looking in the larger half and not always the smaller half.
 middle = (highEnd - lowEnd)/2
 
-
+// Here is where I will need my for loop.
 
 }
