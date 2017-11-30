@@ -26,20 +26,21 @@ middle = (highEnd - lowEnd)/2;
 // I might have to rebuild the while controler.
 
 while(middle >= 0){
-  if(int list[middle] > searchingFor){
+  if(list[middle] > searchingFor){
    highEnd = (middle -1);
    middle = (highEnd - lowEnd)/2;
   }
-  else if(int list[middle] < searchingFor){
+  else if(list[middle] < searchingFor){
   lowEnd = (middle -1);
   middle = (highEnd - lowEnd)/2;
   }
-  else if(int list[middle] == searchingFor){
+  else if(list[middle] == searchingFor){
   
   break;
-  
   }
-  
+  else{
+  middle = (middle -1);
+  }
   // This code is not correct yet.
   
   return middle;
