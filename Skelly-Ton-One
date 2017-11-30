@@ -16,17 +16,31 @@ highEnd = list.length() - 1;
 // but I want to remember that the search might be looking in the larger half and not always the smaller half.
 middle = (highEnd - lowEnd)/2
 
+// I will need to add some code to make sure the array is organised before I try to search it.
+
 // Here is where I will need my for loop.... For loop might not be the best, since we don't really know when it will be finished.
 // We could still use a for and break when we find what we are looking for, but it seems better to use a while loop instead.
+
+// I might have to rebuild the while controler.
+
 while(middle >= 0){
-  if(middle > searchingFor){
+  if(int list[middle] > searchingFor){
+   highEnd = (middle -1);
+   middle = (highEnd - lowEnd)/2
+  }
+  else if(int list[middle] < searchingFor){
+  lowEnd = (middle -1);
+  middle = (highEnd - lowEnd)/2
+  }
+  else if(int list[middle] == searchingFor){
+  
+  break;
   
   }
-  else if(middle < searchingFor){
   
-  }
-  else{
+  // This code is not correct yet.
   
-  }
+  return middle;
+  
  }
 }
