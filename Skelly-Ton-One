@@ -5,6 +5,8 @@ int[] myTestArray;
 
 // I will need to initialize and populate my array before i can use the method.
 
+myTestArray = {1,2,3,4,5,6,7,8,9,10};
+
 }
 
 public int binarySearch(int[] list, int searchingFor){
