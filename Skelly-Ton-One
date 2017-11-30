@@ -15,7 +15,7 @@ int lowEnd, highEnd, middle;
 
 // initializing my search variables.
 lowEnd = 0;
-highEnd = list.length() - 1;
+highEnd = (list.length - 1);
 // At this point I could just divide highEnd by 2, 
 // but I want to remember that the search might be looking in the larger half and not always the smaller half.
 middle = (highEnd - lowEnd)/2;
